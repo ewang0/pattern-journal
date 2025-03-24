@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Journal App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2>Journal Entries</h2>
+        <button id="new-entry-btn">New Entry</button>
+      </div>
+      <div id="entries-list" class="entries-list"></div>
+    </div>
+    <div class="main-content">
+      <div id="editor-container" class="editor-container">
+        <input type="text" id="entry-title" placeholder="Title" class="entry-title">
+        <div class="editor-toolbar">
+          <span id="entry-date"></span>
+          <div>
+            <button id="save-btn">Save</button>
+            <button id="analyze-btn">Analyze with AI</button>
+          </div>
+        </div>
+        <textarea id="entry-content" placeholder="Write your thoughts here..."></textarea>
+      </div>
+      <div id="analysis-container" class="analysis-container hidden">
+        <h3>AI Analysis</h3>
+        <div id="analysis-content"></div>
+        <button id="close-analysis-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html> 
